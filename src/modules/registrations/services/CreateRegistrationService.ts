@@ -43,10 +43,10 @@ class CreateRegistrationService {
 
     const message = {
       to: registration.email,
-      from: 'confirmacao@comejaca.org.br',
+      from: '"COMEJACA" confirmacao@comejaca.org.br',
       subject: 'Confirmação de inscrição 2022',
       html: templateHTML,
-      cc: 'coordenacaogeral@comejaca.org.br',
+      bcc: 'brunobonzoumet@hotmail.com, andkury@yahoo.com.br, marcelo19761976@yahoo.com.br, marylucyd@gmail.com,rubemmourao75@gmail.com, vicentecrisostomo@yahoo.com.br',
     };
 
     await this.mailProvider.sendMail(message);
