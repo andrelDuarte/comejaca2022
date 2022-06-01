@@ -42,7 +42,7 @@
         </div>
 
         <div class="container">
-            Adultos Crianças: R$ 28,00 <br><br>
+            R$ 28,00 <br><br>
             <b>Numero: {{ number_id }}</b>
         </div>
     </div>
@@ -201,32 +201,32 @@
         <div class="steps">
 
             {{#each questionario}}
-                <div class="inputfield">
-                    <label>{{this.nome}}</label>
-                    <input type="text" class="input" id="nome_cracha" disabled name="comejacas" value={{this.resposta}}>
-                </div>
+            <div class="inputfield">
+                <label>{{this.nome}}</label>
+                <input type="text" class="input" id="nome_cracha" disabled name="comejacas" value={{this.resposta}}>
+            </div>
 
-                <div>
-                    {{#if this.quantas}}
-                        <label>Quantas ?</label>
+            <div>
+                {{#if this.quantas}}
+                <label>Quantas ?</label>
 
-                        <input type="text" name="quantas" disabled id="numeroComejacas" disabled class="input"
-                            value={{this.quantas}}>
-                    {{/if}}
-                    {{#if this.quais}}
-                        <label>Quais ?</label>
+                <input type="text" name="quantas" disabled id="numeroComejacas" disabled class="input"
+                    value={{this.quantas}}>
+                {{/if}}
+                {{#if this.quais}}
+                <label>Quais ?</label>
 
-                        <input type="text" name="quais" disabled id="numeroComejacas" disabled class="input"
-                            value={{this.quais}}>
-                    {{/if}}
-                    {{#if this.telefone_convenio}}
-                        <label>telefone_convenio ?</label>
+                <input type="text" name="quais" disabled id="numeroComejacas" disabled class="input"
+                    value={{this.quais}}>
+                {{/if}}
+                {{#if this.telefone_convenio}}
+                <label>telefone_convenio ?</label>
 
-                        <input type="text" name="telefone_convenio" disabled id="numeroComejacas" disabled class="input"
-                            value={{this.telefone_convenio}}>
-                    {{/if}}
+                <input type="text" name="telefone_convenio" disabled id="numeroComejacas" disabled class="input"
+                    value={{this.telefone_convenio}}>
+                {{/if}}
 
-                </div>
+            </div>
             {{/each}}
         </div>
 
@@ -282,7 +282,7 @@
 <div class="wrapper">
     <div class="referencia">
         <div class="inputfield">
-            <label for="nome">Ref. 
+            <label for="nome">Ref.
             </label>
             <input type="text" disabled value="{{nome_completo}}" name="nomecompleto">
         </div>
