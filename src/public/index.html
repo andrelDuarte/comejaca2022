@@ -230,7 +230,7 @@
                 <div>
                     <label>Possui algum tipo de alergia?</label>
                     <div class="custom_select">
-                        <select name="alergia" onchange="removerDisabledTemAlergia(this.value)">
+                        <select name="alergia" required onchange="removerDisabledTemAlergia(this.value)">
                             <option value="">Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
@@ -240,7 +240,7 @@
 
                 <div>
                     <label>Quais? </label>
-                    <input type="text" name="quais_alergia" disabled id="temAlergia" class="input">
+                    <input type="text" name="quais_alergia" required disabled id="temAlergia" class="input">
                 </div>
             </div>
 
@@ -248,7 +248,7 @@
                 <div>
                     <label>Possui alguma doença crônica?</label>
                     <div class="custom_select">
-                        <select name="doenca" onchange="removerDisabledTemDoencaCronica(this.value)">
+                        <select name="doenca" required onchange="removerDisabledTemDoencaCronica(this.value)">
                             <option value="">Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
@@ -257,7 +257,7 @@
                 </div>
                 <div>
                     <label>Quais?</label>
-                    <input type="text" name="quais_doenca" id="temDoencaCronica" disabled class="input">
+                    <input type="text" name="quais_doenca" required id="temDoencaCronica" disabled class="input">
                 </div>
             </div>
 
@@ -265,7 +265,7 @@
                 <div>
                     <label>Faz uso rotineiro de medicação?</label>
                     <div class="custom_select">
-                        <select name="medicacao" onchange="removerDisabledFazUsoMedicacao(this.value)">
+                        <select name="medicacao" required onchange="removerDisabledFazUsoMedicacao(this.value)">
                             <option>Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
@@ -274,7 +274,7 @@
                 </div>
                 <div>
                     <label>Quais? </label>
-                    <input type="text" name="quais_medicacao" id="usaMedicacao" disabled class="input">
+                    <input type="text" name="quais_medicacao" required id="usaMedicacao" disabled class="input">
                 </div>
             </div>
 
@@ -282,7 +282,7 @@
                 <div>
                     <label>Faz uso de alimentação vegetariana?</label>
                     <div class="custom_select">
-                        <select name="vegetariano" onchange="removerDisabledFazUsoVegetariano(this.value)">
+                        <select name="vegetariano" required onchange="removerDisabledFazUsoVegetariano(this.value)">
                             <option>Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
@@ -291,7 +291,7 @@
                 </div>
                 <div>
                     <label>Quais? </label>
-                    <input type="text" name="quais_vegetariano" disabled id="usoVegetariano" class="input">
+                    <input type="text" name="quais_vegetariano" required disabled id="usoVegetariano" class="input">
                 </div>
             </div>
 
@@ -299,7 +299,7 @@
                 <div>
                     <label>Possui plano de saúde?</label>
                     <div class="custom_select">
-                        <select name="plano_de_saude" onchange="removerDisabledTemPlanoSaude(this.value)">
+                        <select name="plano_de_saude" required onchange="removerDisabledTemPlanoSaude(this.value)">
                             <option>Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
@@ -308,7 +308,7 @@
                 </div>
                 <div>
                     <label for="temPlanoSaude">Telefone do convênio</label>
-                    <input type="text" name="telefone_plano" class="input" onkeypress="mask(this, telephone) "
+                    <input type="text" name="telefone_plano" required class="input" onkeypress="mask(this, telephone) "
                         onblur="mask(this, telephone); " disabled id="temPlanoSaude" name="telefone_plano">
                 </div>
             </div>
@@ -418,7 +418,8 @@ Jesus é para o homem o exemplo da perfeição moral a que pode pretender a huma
             </div>
 
             <div class="terms-checkbox">
-                <input type="checkbox" required style="width: 50px; height: 50px;" id="terms-checkbox" name="terms-checkbox">
+                <input type="checkbox" required style="width: 50px; height: 50px;" id="terms-checkbox"
+                    name="terms-checkbox">
                 <label for="terms-checkbox">Li e concordo com as NORMAS DE AÇÂO COMEJACA 2022</label>
             </div>
 
