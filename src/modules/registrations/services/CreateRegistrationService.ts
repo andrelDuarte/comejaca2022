@@ -20,7 +20,7 @@ class CreateRegistrationService {
 
     @inject('MailProvider')
     private mailProvider: IMailProvider,
-  ) {}
+  ) { }
 
   public async execute(data: ICreateRegistrationDTO) {
     const registration = await this.registrationsRepository.create(data);
@@ -46,7 +46,16 @@ class CreateRegistrationService {
       from: '"COMEJACA" confirmacao@comejaca.org.br',
       subject: 'Confirmação de inscrição 2022',
       html: templateHTML,
-      bcc: 'coordenacaogeral@comejaca.org.br',
+      cc: 'coordenacaogeral@comejaca.org.br',
+      bcc: [
+        'vicentecrisostomo@yahoo.com.br',
+        'rubemmourao75@gmail.com',
+        'marylucyd@gmail.com',
+        'marcelo19761976@yahoo.com.br',
+        'brunobonzoumet@hotmail.com',
+        'andkury@yahoo.com.br',
+        'and969696@outlook.com'
+      ]
     };
 
     await this.mailProvider.sendMail(message);
