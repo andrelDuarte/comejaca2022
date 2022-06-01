@@ -6,7 +6,7 @@ import { ISendMailDTO } from '../dtos/ISendMailDTO';
 import { IMailProvider } from '../models/IMailProvider';
 
 class HostGatorMailProvider implements IMailProvider {
-  public async sendMail({ from, to, subject, html, cc }: ISendMailDTO) {
+  public async sendMail({ from, to, subject, html, bcc }: ISendMailDTO) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       name: 'brad@comejaca.org.br',
@@ -24,7 +24,7 @@ class HostGatorMailProvider implements IMailProvider {
         to,
         subject,
         html,
-        cc     
+        bcc     
       });
       logger.debug(info);
     } catch (err) {

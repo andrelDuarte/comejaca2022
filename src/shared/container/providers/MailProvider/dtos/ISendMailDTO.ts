@@ -3,7 +3,7 @@ interface ISendMailDTO {
   from: string;
   subject: string;
   html: string;
-  cc: string;
+  bcc: string;
 }
 
 export { ISendMailDTO };

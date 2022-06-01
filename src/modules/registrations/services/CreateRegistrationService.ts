@@ -46,7 +46,7 @@ class CreateRegistrationService {
       from: '"COMEJACA" confirmacao@comejaca.org.br',
       subject: 'Confirmação de inscrição 2022',
       html: templateHTML,
-      cc: 'coordenacaogeral@comejaca.org.br',
+      bcc: 'coordenacaogeral@comejaca.org.br',
     };
 
     await this.mailProvider.sendMail(message);
