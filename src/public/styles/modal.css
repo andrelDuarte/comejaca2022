@@ -1,0 +1,118 @@
+.btnOpenModal {
+    font-size: x-large;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #264653;
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+}
+
+.modal-container_two {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    text-align: justify;
+
+    height: 85%;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 1;
+    text-align: justify;
+/*     position: absolute;
+    bottom: 0; */
+    height: 85%;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    text-align: justify;
+
+
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.btn-normas {
+    text-align: center
+}
+.modal>span {
+    margin:  auto;
+    text-align: justify;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-y: scroll;
+    padding: 30px;
+    line-height: 1.5;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    size: 1.9rem;
+}
+
+.btnOK {
+    background-color: #264653 !important;
+}
+
+.btnClose {
+    background-color: #e63946 !important;
+}
+
+@media (max-width: 500px) {
+    .modal {
+        padding: 10px;
+        width: 80%;
+    }
+
+    span,
+    .btns button {
+        font-size: smaller;
+    }
+}
