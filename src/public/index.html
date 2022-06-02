@@ -229,25 +229,25 @@
         </div>
     </div>
     <div class="text">
-        <div> <b>LOCAL</b></div>
-        <div>
-            Educandário Social Lar de Frei Luiz <br>
+        <div style="text-align: right;margin-right: 15px"> <b>LOCAL</b>
+   
+       Lar de Frei Luiz 
 
-        </div>
-        <div>
+      </div>
+        <div style="text-align: justify; margin-left: 15px;">
             <b>DIAS</b>
-        </div>
-        <div>
+        
+      
             30 e 31 de julho de 2022
-        </div>
+        
     
-    </div>
+    </div></div>
 
     <div class="price">
         <div>
             <b> VALOR </b>
-        </div>
-        <div >
+      
+     
             Confraternista e Trabalhador R$ 40 <br>
             Pequenos Companheiros R$ 25
         </div>
@@ -447,7 +447,7 @@
                 <div>
                     <label>Já participou de outras COMEJACAS?</label>
                     <div class="custom_select">
-                        <select name="comejacas" onchange="removerDisabledQuantasComejacas(this.value)">
+                        <select name="comejacas" required onchange="removerDisabledQuantasComejacas(this.value)">
                             <option value="">Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
@@ -457,7 +457,7 @@
 
                 <div>
                     <label>Quantas ?</label>
-                    <input type="text" name="quantas" disabled id="numeroComejacas" class="input">
+                    <input type="text" name="quantas" required disabled id="numeroComejacas" class="input">
 
                 </div>
             </div>
@@ -502,7 +502,7 @@
                     <label>Faz uso rotineiro de medicação?</label>
                     <div class="custom_select">
                         <select name="medicacao" required onchange="removerDisabledFazUsoMedicacao(this.value)">
-                            <option>Selecionar</option>
+                            <option value="">Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
                         </select>
@@ -519,7 +519,7 @@
                     <label>Faz uso de alimentação vegetariana?</label>
                     <div class="custom_select">
                         <select name="vegetariano" required onchange="removerDisabledFazUsoVegetariano(this.value)">
-                            <option>Selecionar</option>
+                            <option value="">Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
                         </select>
@@ -536,7 +536,7 @@
                     <label>Possui plano de saúde?</label>
                     <div class="custom_select">
                         <select name="plano_de_saude" required onchange="removerDisabledTemPlanoSaude(this.value)">
-                            <option>Selecionar</option>
+                            <option value="">Selecionar</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
                         </select>
