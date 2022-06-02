@@ -83,7 +83,7 @@ hr {
 
 .btns {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     margin-top: 10px;
 }
 
@@ -94,7 +94,7 @@ hr {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    size: 1.9rem;
+    size: 2.5rem;
 }
 
 .btnOK {
