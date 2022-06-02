@@ -301,3 +301,15 @@ ul:last-child {
 #dados_para_evento .inputfield input {
     margin-top: 15px;
 }
+
+.text {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.text > div {
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1.5;
+}
