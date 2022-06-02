@@ -28,7 +28,7 @@ birthday.setAttribute('max', new Intl.DateTimeFormat('fr-ca').format(new Date())
 
 
 birthday.addEventListener("change", (event) => {
-    const ageDate = new Date(new Date(2022, 7, 30) - new Date(event.target.value));
+    const ageDate = new Date(new Date(2022, 6, 30) - new Date(event.target.value));
     console.log(ageDate)
     const year = Math.abs(ageDate.getUTCFullYear() - 1970);
     document.querySelector(`input[name="idade"]`).value = year;
