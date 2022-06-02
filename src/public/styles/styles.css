@@ -302,17 +302,21 @@ ul:last-child {
     margin-top: 15px;
 }
 
+img {
+  width:   50%;
+}
+
 .text {
     margin-top: 25px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr;
 }
 
-.text > div {
+.text>div {
     margin-top: auto;
     margin-bottom: auto;
     line-height: 1.5;
-    font-size: 0.8rem ;
+    font-size: 0.8rem;
     text-align: right;
 }
 
@@ -321,12 +325,12 @@ ul:last-child {
     grid-template-columns: 1fr 3fr 1fr 3fr;
     text-align: right;
     margin-top: 25px;
-    font-size: 0.8rem ;
+    font-size: 0.8rem;
     line-height: 1.5;
-  
+
 }
 
-.price >div {
+.price>div {
     margin-top: auto;
     margin-bottom: auto;
     text-align: right;

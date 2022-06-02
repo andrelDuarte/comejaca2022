@@ -25,28 +25,33 @@
     line-height: 1.5;
     font-size: 0.8rem;
     text-align: center;
-    margin-top:  20px;
+    margin-top: 20px;
   }
 
-  
-.price {
-  flex-wrap: wrap;
-  display: block;
-  text-align: center;
-  margin-top: 25px;
-  font-size: 0.8rem ;
-  line-height: 1.5;
 
-}
+  .price {
+    flex-wrap: wrap;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.8rem;
+    line-height: 1.5;
 
-.price >div {
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-}
-.item >div {
-  padding-top: 15px;
-}
+  }
+
+  .price>div {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .item>div {
+    padding-top: 15px;
+  }
+
+  img {
+    width: 100%;
+  }
 
   .active .modal {
 
