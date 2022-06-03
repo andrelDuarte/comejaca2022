@@ -15,25 +15,33 @@ hr {
 
 .modal-container_two {
     width: 100vw;
-    position: fixed;
-    top: 30px;
-    display: none;
-    z-index: 999;
-    text-align: justify;
-
-    height: 85%;
-}
-
-.modal-container {
-    width: 100vw;
-    position: fixed;
+    position: absolute;
+    width: 100%;
     top: 30px;
     display: none;
     z-index: 1;
     text-align: justify;
-/*     position: absolute;
+    /*     position: absolute;
     bottom: 0; */
-    height: 85%;
+    height: 100vh;
+    right: 1px;
+    bottom: 1px;
+}
+
+.modal-container {
+
+    width: 100vw;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    display: none;
+    z-index: 1;
+    text-align: justify;
+    /*     position: absolute;
+    bottom: 0; */
+    height: 100vh;
+    right: 1px;
+    bottom: 1px;
 }
 
 .modal {
@@ -45,7 +53,6 @@ hr {
     width: 50%;
     text-align: justify;
 
-
 }
 
 .active {
@@ -54,6 +61,7 @@ hr {
 
 .active .modal {
     animation: modal .4s;
+    width: 100vw;
 }
 
 @keyframes modal {
@@ -67,11 +75,13 @@ hr {
         transform: translate3d(0, 0, 0);
     }
 }
+
 .btn-normas {
     text-align: center
 }
+
 .modal>span {
-    margin:  auto;
+    margin: auto;
     text-align: justify;
     max-height: 100vh;
     max-width: 100vw;
@@ -83,8 +93,10 @@ hr {
 
 .btns {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .btns button {
