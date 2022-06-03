@@ -47,7 +47,7 @@ hr {
 .modal {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 15px;
     background-color: white;
     border-radius: 10px;
     width: 50%;

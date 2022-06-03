@@ -12,7 +12,29 @@
     left: 0;
     ;
   } */
+  b {
+    display: block;
+   
+    text-align: center;
+  }
 
+  .text > .text-local {
+    text-align: center;
+
+}
+.item {
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  
+}
+
+.item > div {
+  width: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
   .text {
     margin-top: 25px;
     flex-wrap: wrap;
