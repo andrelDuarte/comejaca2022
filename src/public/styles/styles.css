@@ -340,9 +340,6 @@ img {
 }
 
 .price {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: justify;
     margin-top: 25px;
     font-size: 0.8rem;
     line-height: 1.5;
